@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+    <input type="text" id="r">
+    <input type="text" id="p">
+    <button onclick="my()">click</button>
+
+    <p id="demo"></p>
+
+
+<script>
+function my(){
+    var x = document.getElementById("r").value;
+    var y = document.getElementById("p").value;
+    // localStorage.setItem("name",x)
+   if(localStorage.getItem("name")==x){
+    document.getElementById("demo").innerHTML=   localStorage.getItem("name");
+   }
+   else{
+    document.getElementById("demo").innerHTML=y
+   }
+}
+
+</script>
+
+</body>
+</html>
